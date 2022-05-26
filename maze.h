@@ -10,10 +10,11 @@
 
 #define HEIGHT 11
 #define WIDTH 13
-
-#define DOWN 0
-#define RIGHT 1
-#define NONE 2
+enum Hole_Direction {
+DOWN = 0,
+RIGHT,
+NONE
+};
 /////////////////////////
 char field[HEIGHT][WIDTH];
 int hole;
