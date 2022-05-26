@@ -7,6 +7,8 @@
 #define EMTPY ' '
 #define HEIGHT 5
 #define WIDTH 7
+#define LEFT 0
+#define RIGHT 1
 char field[HEIGHT][WIDTH];
 void Init_Field(void);
 void Init_Field(void){
