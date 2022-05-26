@@ -1,15 +1,23 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <time.h>
+////////////////////////
 #define CROSS '+'
 #define HORIZONTAL '-'
 #define VERTICAL '|'
 #define EMTPY ' '
-#define HEIGHT 5
-#define WIDTH 7
-#define LEFT 0
+
+#define HEIGHT 11
+#define WIDTH 13
+
+#define DOWN 0
 #define RIGHT 1
+#define NONE 2
+/////////////////////////
 char field[HEIGHT][WIDTH];
+int hole;
+/////////////////////////
 void Init_Field(void);
 void Init_Field(void){
     int i, j;
